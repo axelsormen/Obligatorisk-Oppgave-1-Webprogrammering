@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kino</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid;
+        }
+
+        body{
+            font-family: Arial;
+        }
+    </style>
+
+    <script src="JS.js">
+    </script>
+
+</head>
+<body>
+
+    <h1>Bestilling av kinobilletter</h1>
+
+    <label for="film">Velg film: </label>
+    <select id="film" name="film">
+        <option selected disabled>Velg film her</option>
+        <option value="Star Wars III: Revenge of the Sith">Star Wars III: Revenge of the Sith</option>
+        <option value="Harry Potter and the Goblet of Fire">Harry Potter and the Goblet of Fire</option>
+        <option value="John Wick">John Wick</option>
+        <option value="Batman: The Dark Knight">Batman: The Dark Knight</option>
+        <option value="James Bond: Goldeneye">James Bond: Goldeneye</option>
+        <option value="American Pie Presents: Beta House">American Pie Presents: Beta House</option>
+    </select><div id="utFilm"></div>
+
+    <br><br>
+
+    <label for="antall">Antall: </label><input id="antall" type="text" size="2"><div id="utAntall"></div>
+
+    <br>
+
+    <label for="fornavn">Fornavn: </label><input id="fornavn" type="text"><div id="utFornavn"></div>
+    <label for="etternavn">Etternavn: </label><input id="etternavn" type="text"><div id="utEtternavn"></div>
+    <label for="telefonnr">Telefonnr: </label><input id="telefonnr" type="tel"><div id="utTelefonnr"></div>
+    <label for="epost">Epost: </label><input id="epost" type="email"><div id="utEpost"></div>
+    <button onclick="kjopBillett()">Kjøp billett</button>
+
+    <h3>Alle billetter</h3>
+    <div id="utMelding"></div>
+
+    <br>
+
+    <button onclick="slettBillett()">Slett alle billettene</button>
+</body>
+</html>
